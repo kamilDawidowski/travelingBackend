@@ -12,6 +12,8 @@ public class RegistrationController {
     @PostMapping
     public String registration(@RequestBody RegistrationRequest form)
     {
+
+        System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
         return  registrationService.register(form);
     }
     @GetMapping(path = "confirm")
